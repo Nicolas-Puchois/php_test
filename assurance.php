@@ -64,8 +64,10 @@ if ($points < 0) {
     $tarif = "orange";
 } elseif ($points == 2) {
     $tarif = "vert";
-} else {
+} elseif ($points == 3) {
     $tarif = "bleu";
+} elseif ($age < 15) {
+    $tarif = "Non assurable";
 }
 
 echo ("Selon le barême, vous êtes en : " . $tarif);
