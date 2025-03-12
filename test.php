@@ -24,21 +24,26 @@ $nombre_utilisateur = readline("Veuillez saisir un nombre: ");
 $compteur = 1;
 $nbre_essaie = 5;
 
+
 while ($nombre_utilisateur != $nombre_aleatiore && $nbre_essaie - 1  > 0) {
-    $compteur++;
-    $nbre_essaie--;
-    echo ("Il vous reste " . $nbre_essaie . " d'essais ");
+
+
+
     if ($nombre_utilisateur < $nombre_aleatiore) {
+        $compteur++;
+        $nbre_essaie--;
         echo ("Le nombre est plus grand \n");
-        $nombre_utilisateur = readline("Veuillez saisir un nombre: ");
     } else if ($nombre_utilisateur > $nombre_aleatiore) {
+        $compteur++;
+        $nbre_essaie--;
         echo ("Le nombre est plus petit \n");
-        $nombre_utilisateur = readline("Veuillez saisir un nombre: ");
     }
+    echo ("Il vous reste " . $nbre_essaie . " d'essais ");
+    $nombre_utilisateur = readline("Veuillez saisir un nombre: ");
 }
 if ($nombre_utilisateur == $nombre_aleatiore && $nbre_essaie > 0) {
-    echo ("bravo vous avez trouvé en " . $compteur . " d'essaie !! \n");
-    echo (" Il vous reste " . $nbre_essaie . " d'essaies. ");
+    echo ("bravo vous avez trouvé en " . $compteur . " d'essaie !! ;) \n");
+    echo (" Il vous restes encore " . $nbre_essaie . " d'essaies a la fin. ");
 } else {
     echo ("Dommage, vous n'avez pas trouver le nombre " . $nombre_aleatiore . " :( ");
 }
