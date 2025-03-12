@@ -25,7 +25,7 @@ if ($age < 25) {
 
 if ($permis == 0) {
     $points = 0;
-} elseif ($permis < 2) {
+} elseif ($permis < 5) {
     // Pas de points ajoutés
 } else {
     $points++;
