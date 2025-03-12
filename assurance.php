@@ -112,9 +112,11 @@ echo ("Selon le barême, vous êtes en : " . $tarif);
 //         return "orange";
 //     } elseif ($points == 2) {
 //         return "vert";
-//     } else {
-//         return "bleu";
-//     }
+//     } elseif ($points == 3) {
+//     $tarif = "bleu";
+// } elseif ($age < 15) {
+//     $tarif = "Non assurable";
+// }
 // }
 
 // $age        = readline("Entrer votre age : ");
