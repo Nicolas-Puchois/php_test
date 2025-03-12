@@ -7,10 +7,7 @@ $accident   = readline("Entrer vos nombre d'accident : ");
 $points     = 0;
 $tarif;
 
-
-
 // Calcul des points en fonction de l'âge
-
 if ($age < 25) {
     // Pas de points ajoutés
 
@@ -18,33 +15,23 @@ if ($age < 25) {
     $points++;
 }
 
-
-
-
 // Calcul des points en fonction de la durée du permis
-
 if ($permis == 0) {
     $points = 0;
-} elseif ($permis < 5) {
+} elseif ($permis < 2) {
     // Pas de points ajoutés
 } else {
     $points++;
 }
 
-
-
 // Calcul des points en fonction de l'ancienneté
-
 if ($anciennete < 2) {
     // Pas de points ajoutés
 } else {
     $points++;
 }
 
-
-
 // Calcul des points en fonction du nombre d'accidents
-
 if ($accident == 0) {
     // Pas de points retirés
 } elseif ($accident == 1) {
