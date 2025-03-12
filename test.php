@@ -20,15 +20,14 @@
 $nombre_minimal = readline("Veuillez saisir le nombre minimal pour la plage : ");
 $nombre_maximal = readline("Veuillez saisir le nombre maximal pour la plage : ");
 $nombre_aleatiore = rand($nombre_minimal, $nombre_maximal);
-$nombre_utilisateur = readline("Veuillez saisir un nombre: ");
 $compteur = 1;
 $nbre_essaie = 5;
 
 
+
+$nombre_utilisateur = readline("Veuillez saisir un nombre: ");
+
 while ($nombre_utilisateur != $nombre_aleatiore && $nbre_essaie - 1  > 0) {
-
-
-
     if ($nombre_utilisateur < $nombre_aleatiore) {
         $compteur++;
         $nbre_essaie--;
@@ -41,6 +40,7 @@ while ($nombre_utilisateur != $nombre_aleatiore && $nbre_essaie - 1  > 0) {
     echo ("Il vous reste " . $nbre_essaie . " d'essais ");
     $nombre_utilisateur = readline("Veuillez saisir un nombre: ");
 }
+
 if ($nombre_utilisateur == $nombre_aleatiore && $nbre_essaie > 0) {
     echo ("bravo vous avez trouvé en " . $compteur . " d'essaie !! ;) \n");
     echo (" Il vous restes encore " . $nbre_essaie . " d'essaies a la fin. ");
